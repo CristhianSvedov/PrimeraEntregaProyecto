@@ -31,14 +31,6 @@ const medias = {
 producto.push(medias)
 
 while(seguirComprando===true){
-    //if(productoSeleccionado===1){
-    //    carrito.push(producto[0])
-    //}else if(productoSeleccionado===2){
-    //    carrito.push(producto[1])
-    //}else if(productoSeleccionado===3){
-    //    carrito.push(producto[2])
-    //}else if(productoSeleccionado===4){
-    //   carrito.push(producto[3])
     const productoComprado = producto.find(prod=>prod.id===productoSeleccionado)
     if(productoComprado){
         totalCompra = totalCompra + productoComprado.precio
